@@ -4,7 +4,7 @@ from pos_tagging import perform_pos_tagging
 from stemming import perform_stemming
 from lemmatization import perform_lemmatization
 from ner import perform_ner
-from ner import perform_ner
+
 import os
 # Ensure the NLTK resources are downloaded
 if not os.path.exists("nltk_data"):
