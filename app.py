@@ -5,6 +5,14 @@ from stemming import perform_stemming
 from lemmatization import perform_lemmatization
 from ner import perform_ner
 
+nltk.download('punkt')
+nltk.download('wordnet')
+nltk.download('omw-1.4')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('maxent_ne_chunker')
+nltk.download('words')
+nltk.download('stopwords')
+
 # Streamlit App Configuration
 st.set_page_config(page_title="NLP Explorer", layout="wide")
 
