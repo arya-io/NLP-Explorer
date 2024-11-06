@@ -4,6 +4,19 @@ from pos_tagging import perform_pos_tagging
 from stemming import perform_stemming
 from lemmatization import perform_lemmatization
 from ner import perform_ner
+import os
+
+# Ensure the NLTK resources are downloaded
+if not os.path.exists("nltk_data"):
+    os.makedirs("nltk_data")
+
+# Set the NLTK data path to the correct location
+import nltk
+nltk.data.path.append(os.path.join(os.getcwd(), "nltk_data"))
+
+# Import and execute the resource download function
+import download_nltk_resources
+download_nltk_resources.download_nltk_resources()
 
 # Streamlit App Configuration
 st.set_page_config(page_title="NLP Explorer", layout="wide")
