@@ -1,0 +1,2 @@
+# Ignore NLTK temp files
+nltk_data/__pycache__/
