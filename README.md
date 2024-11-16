@@ -26,7 +26,7 @@ The application aims to provide a hands-on experience with NLP and can be used t
 Start by cloning the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/nlp-explorer.git
+git clone https://github.com/arya-io/nlp-explorer.git
 ```
 
 ### 2. Install dependencies
