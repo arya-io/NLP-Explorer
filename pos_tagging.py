@@ -2,7 +2,6 @@ import nltk
 import re
 from nltk.corpus import stopwords
 
-# Download necessary resources
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 nltk.download('stopwords')
@@ -16,10 +15,10 @@ def perform_pos_tagging(text):
         list: list of tuples with word and its POS tag
     """
     # Step 1: Preprocessing
-    text = text.strip()  # Remove leading and trailing whitespace
-    text = re.sub(r'\s+', ' ', text)  # Replace multiple spaces with a single space
+    text = text.strip()
+    text = re.sub(r'\s+', ' ', text)
     
-    # Optional: Remove URLs, emails, and other unwanted entities
+    # Remove URLs, emails, and other unwanted entities
     text = re.sub(r'http\S+|www\S+|https\S+', '', text)  # Remove URLs
     text = re.sub(r'\S+@\S+', '', text)  # Remove email addresses
     
@@ -36,7 +35,7 @@ def perform_pos_tagging(text):
     return pos_tags
 
 # Test the function
-if __name__ == "__main__":
-    text = "The quick brown fox jumps over the lazy dog. Check out this link: https://example.com!"
-    result = perform_pos_tagging(text)
-    print("POS Tags:", result)
+# if __name__ == "__main__":
+#     text = "The quick brown fox jumps over the lazy dog. Check out this link: https://example.com!"
+#     result = perform_pos_tagging(text)
+#     print("POS Tags:", result)
