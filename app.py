@@ -1,5 +1,3 @@
-#Importing Libraries
-
 import streamlit as st
 from tokenization import perform_tokenization
 from pos_tagging import perform_pos_tagging
@@ -189,7 +187,7 @@ if st.button("Analyze Text", key="analyze_button", use_container_width=True):
 st.markdown("---")
 st.markdown("""
 <div class='footer'>
-    💡 NLP Explorer | Built with <a href='https://streamlit.io/' class='footer-link'>Streamlit</a> | Version 1.0.0 | 
+    💡 NLP Explorer | Built with <a href='https://streamlit.io/' class='footer-link'>Streamlit</a> | 
     Visit the <a href='https://github.com/arya-io/nlp-explorer' class='footer-link'>GitHub Repo</a>
 </div>
 """, unsafe_allow_html=True)
