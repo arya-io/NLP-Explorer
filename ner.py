@@ -4,7 +4,6 @@ from nltk.tree import Tree
 import re
 from nltk.corpus import stopwords
 
-# Download necessary resources
 nltk.download('punkt')
 nltk.download('maxent_ne_chunker')
 nltk.download('words')
@@ -60,7 +59,7 @@ def perform_ner(text):
     return entities
 
 # Test the function
-if __name__ == "__main__":
-    text = "Barack Obama was born on August 4, 1961, in Honolulu, Hawaii. Visit us at https://example.com for more info."
-    result = perform_ner(text)
-    print("Named Entities:", result)
+# if __name__ == "__main__":
+#     text = "Barack Obama was born on August 4, 1961, in Honolulu, Hawaii. Visit us at https://example.com for more info."
+#     result = perform_ner(text)
+#     print("Named Entities:", result)
