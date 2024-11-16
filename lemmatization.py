@@ -5,7 +5,6 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk import pos_tag
 
-# Download necessary resources
 nltk.download('punkt')
 nltk.download('wordnet')
 nltk.download('omw-1.4')
@@ -75,7 +74,7 @@ def perform_lemmatization(text):
     return lemmatized_words
 
 # Test the function
-if __name__ == "__main__":
-    text = "The children are playing in the garden. The cats were running fast."
-    result = perform_lemmatization(text)
-    print("Lemmatized Words:", result)
+# if __name__ == "__main__":
+#     text = "The children are playing in the garden. The cats were running fast."
+#     result = perform_lemmatization(text)
+#     print("Lemmatized Words:", result)
