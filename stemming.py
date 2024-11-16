@@ -4,7 +4,6 @@ from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 import re
 
-# Download necessary resources
 nltk.download('punkt')
 nltk.download('stopwords')
 
@@ -36,7 +35,7 @@ def perform_stemming(text, use_snowball=False):
     return stemmed_words
 
 # Test the function
-if __name__ == "__main__":
-    text = "Running runners are running at a fast speed in the run!"
-    result = perform_stemming(text, use_snowball=True)
-    print("Stemmed Words:", result)
+# if __name__ == "__main__":
+#     text = "Running runners are running at a fast speed in the run!"
+#     result = perform_stemming(text, use_snowball=True)
+#     print("Stemmed Words:", result)
